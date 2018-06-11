@@ -1,0 +1,22 @@
+<svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
+ <title>Desktop HD Copy 20</title>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="252" width="202" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1" fill-rule="evenodd" fill="none">
+   <path stroke="null" id="svg_2" d="m163.326088,147.062049l0,-50.907276l-96.044873,-53.753366l0,50.907276l96.044873,53.753366z" fill="#BED23C"/>
+   <g stroke="null" id="svg_3">
+    <path stroke="null" id="svg_4" d="m192.389004,24.641984l-19.629486,11.620225l-20.356171,11.619101l0,-45.61831l20.107953,11.188931l19.877705,11.190054z" fill="#86D2E9"/>
+    <path stroke="#86D2E9" id="svg_5" d="m192.389004,24.641984l-19.629486,11.620225l-20.356171,11.619101l0,-45.61831l20.107953,11.188931l19.877705,11.190054z" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.54"/>
+    <path stroke="null" id="svg_6" d="m106.475044,190.560955l-0.553718,-50.907276l-95.490032,-53.754489l0,50.908399l96.04375,53.753366z" fill="#86D2E9"/>
+   </g>
+   <path stroke="#1D253A" id="svg_7" d="m105.490032,137.711733l-47.148056,27.90943l-48.341976,27.910553l0,-109.573348l47.745577,26.876121l47.744454,26.877245z" stroke-linejoin="round" stroke-linecap="round" stroke-width="5"/>
+   <path stroke="#1D253A" id="svg_8" d="m106.04375,189.377143l-47.148056,27.90943l-48.895694,27.910553l0,-109.573348l48.299296,26.876121l47.744454,26.877245z" stroke-linejoin="round" stroke-linecap="round" stroke-width="5"/>
+   <path stroke="#1D253A" id="svg_9" d="m106.04375,188.966066l0,-50.907276l-0.553718,-133.844859l-95.490032,55.819982l0,129.965461" stroke-linejoin="round" stroke-linecap="round" stroke-width="5"/>
+  </g>
+ </g>
+</svg>
