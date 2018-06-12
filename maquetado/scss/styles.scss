@@ -8,8 +8,17 @@ body {
 	padding: 100px;
 }
 
+.main{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 70%;
+	border: 1px solid red;
+}
+
 .cards {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 50px 0;
+	border: 1px solid red;
 }
