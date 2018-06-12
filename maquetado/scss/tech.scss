@@ -1,4 +1,4 @@
-.tech{
+.tech {
 	align-items: center;
 	display: flex;
 	background: $green;
@@ -8,13 +8,14 @@
 	text-align: center;
 	padding: 15px;
 	position: relative;
-	width: 200px;
-	height: 300px;
+	width: 210px;
+	height: 330px;
 	margin: 25px;
 
 	img {
-		width: 125px;
+		width: 100px;
 		margin: 5px 0;
+		max-height: 100px;
 	}
 
 	p {
