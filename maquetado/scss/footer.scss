@@ -1,0 +1,22 @@
+footer {
+  background: $blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  padding: 50px;
+  width: 100%;
+}
+
+.slogan {
+  color: #FFF;
+  font-size: $text-big;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  align-self: flex-end;
+  color: #FFF;
+  font-size: $text-small;
+}

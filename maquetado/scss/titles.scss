@@ -1,10 +1,10 @@
-$triangulos : 'assets/triangulos.svg'; 
+$triangulos : 'assets/triangulos.svg';
 
 .title {
 	background-image: url($triangulos);
   background-size: 80px;
   background-repeat: no-repeat;
-  font-size: 22px;
+  font-size: $text-big;
   font-weight: 500;
   height: 100px;
   letter-spacing: 1px;

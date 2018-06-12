@@ -1,17 +1,19 @@
 $green: #BED23C;
+$blue: #00ADEE;
+
+$text-small: 12px;
+$text-medium: 16px;
+$text-big: 24px;
 
 * {
 	font-family: 'Roboto', sans-serif;
-}
-
-body {
-	padding: 100px;
 }
 
 .main {
 	width: 70%;
 	margin: 0 auto;
 	margin-top: 70px;
+	padding: 100px 50px;
 }
 
 .cards {
