@@ -23,3 +23,19 @@ $text-big: 24px;
 	margin: 50px;
 	margin-top: 20px;
 }
+
+@media only screen and (max-width: 1024px) {
+    .cards {
+			justify-content: center;
+			grid-template-columns: 210px;
+			margin: 0;
+    }
+
+		.dev-tools {
+			display: none;
+		}
+
+		.main {
+			width: 100%;
+		}
+}

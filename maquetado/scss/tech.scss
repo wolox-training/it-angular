@@ -38,3 +38,21 @@
 	align-self: center;
 	height: 100%;
 }
+
+@media only screen and (max-width: 1024px) {
+    .tech.primary {
+			grid-column: 1 / 1;
+			grid-row: 1 / 1;
+			border-right: none;
+			justify-self: center;
+    }
+
+		.tech {
+			justify-self: center;
+			border-bottom: 2px solid $green;
+		}
+
+		.tech:last-child {
+			border: none;
+		}
+}

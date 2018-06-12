@@ -20,3 +20,17 @@ footer {
   color: #FFF;
   font-size: $text-small;
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .slogan {
+    font-size: $text-medium;
+    margin-bottom: 5px;
+  }
+
+  .copyright {
+    font-size: $text-small;
+    align-self: center;
+    margin-top: 25px;
+  }
+}
