@@ -1,21 +1,15 @@
-$green: #BED23C;
-
 * {
-	font-family: 'Roboto', sans-serif;
-}
-
-body {
-	padding: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main {
-	width: 70%;
 	margin: 0 auto;
+	margin-top: 70px;
+	padding: 100px 250px;
 }
 
 .cards {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 50px;
-	margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 50px 50px 50px;
 }
