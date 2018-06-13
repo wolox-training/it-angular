@@ -12,6 +12,7 @@
   height: 330px;
   margin: 25px;
 
+
   .logo-tech {
     width: 100px;
     margin: 5px 0;
@@ -33,9 +34,15 @@
     height: 100%;
     border: 2px solid $green;
     border-radius: 5px;
+    transition: all 0.5s;
     left: -13px;
     top: -13px;
     z-index: -1;
+  }
+
+  &:hover::after {
+    left: 13px;
+    top: 13px;
   }
 }
 
