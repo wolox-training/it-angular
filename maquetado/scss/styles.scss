@@ -6,20 +6,20 @@ $text-medium: 16px;
 $text-big: 24px;
 
 * {
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main {
-	width: 70%;
-	margin: 0 auto;
-	margin-top: 70px;
-	padding: 100px 50px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 100px 50px;
 }
 
 .cards {
-	display: grid;
-	grid-template-columns: repeat(4, 210px);
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
   grid-column-gap: 30px;
-	margin: 50px;
-	margin-top: 20px;
+  margin: 50px;
+  margin-top: 20px;
 }
