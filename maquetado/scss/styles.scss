@@ -1,5 +1,3 @@
-$green: #BED23C;
-
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -10,7 +8,9 @@ $green: #BED23C;
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 50px 50px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  grid-column-gap: 30px;
+  margin: 50px;
+  margin-top: 20px;
 }
