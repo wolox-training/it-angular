@@ -52,7 +52,7 @@
 			border-bottom: 2px solid $green;
 		}
 
-		.tech:last-child {
+		&:last-child {
 			border: none;
 		}
 }
