@@ -9,13 +9,16 @@ body {
 }
 
 .main {
-	width: 70%;
+	padding: 0 15%;
 	margin: 0 auto;
 }
 
 .cards {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 50px;
-	margin-top: 20px;
+	margin: 20px 50px 50px 50px;
+}
+
+.bold {
+  font-weight: 600;
 }
