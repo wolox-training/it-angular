@@ -1,24 +1,23 @@
 $green: #BED23C;
 
 * {
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-	padding: 100px;
+  padding: 100px;
 }
 
 .main {
-	padding: 0 15%;
-	margin: 0 auto;
+  padding: 0 100px;
 }
 
 .cards {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 20px 50px 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 50px 50px 50px;
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
 }
