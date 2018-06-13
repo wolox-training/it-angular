@@ -1,4 +1,4 @@
-footer {
+.footer {
   background: $blue;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@ footer {
 }
 
 .slogan {
-  color: #FFF;
+  color: $white;
   font-size: $text-big;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -17,7 +17,7 @@ footer {
 
 .copyright {
   align-self: flex-end;
-  color: #FFF;
+  color: $white;
   font-size: $text-small;
 }
 
