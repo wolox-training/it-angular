@@ -1,7 +1,7 @@
 .navbar {
   align-items: center;
   background: $white;
-  box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 12px 0px $white-50;
   display: flex;
   margin-bottom: 70px;
   width: 100%;
@@ -11,14 +11,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
-}
+  z-index: 1;.
 
-.navbar .logo {
-  height: 40px;
-  width: auto;
-}
+  .text {
+    font-size: $text-medium;
+  }
 
-.navbar .text {
-  font-size: $text-medium;
+  .logo {
+    height: 40px;
+    width: auto;
+  }
 }
