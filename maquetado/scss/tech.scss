@@ -40,12 +40,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .tech.primary {
+		.tech.primary {
 			grid-column: 1 / 1;
 			grid-row: 1 / 1;
 			border-right: none;
 			justify-self: center;
-    }
+		}
 
 		.tech {
 			justify-self: center;
