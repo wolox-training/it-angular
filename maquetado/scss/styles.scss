@@ -4,6 +4,8 @@ $green: #BED23C;
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  padding: 100px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 100px;
 }
