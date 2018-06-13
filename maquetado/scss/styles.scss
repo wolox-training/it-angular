@@ -20,6 +20,10 @@
       justify-content: center;
       grid-template-columns: 210px;
       margin: 0;
+
+      :last-child {
+        border: none;
+      }
     }
 
     .dev-tools {
@@ -29,4 +33,5 @@
     .main {
       width: 100%;
     }
+
 }
