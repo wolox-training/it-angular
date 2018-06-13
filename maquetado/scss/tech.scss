@@ -15,12 +15,15 @@
     width: 125px;
     margin: 5px 0;
   }
+
   .text {
     margin: 5px 0;
   }
+
   .description{
     margin: 10px 0;
   }
+
   &::after {
     content: '';
     position: absolute;
@@ -32,5 +35,4 @@
     top: -13px;
     z-index: -1;
   }
-
 }
