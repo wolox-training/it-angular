@@ -4,8 +4,13 @@ $green: #BED23C;
   font-family: 'Roboto', sans-serif;
 }
 
+.main {
+  margin: 70px auto 0;
+  padding: 100px 20%;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 100px;
+  margin: 20px 50px 50px 50px;
 }
