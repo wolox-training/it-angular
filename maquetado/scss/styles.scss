@@ -1,9 +1,36 @@
-$green: #BED23C;
-
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  padding: 100px;
+.main {
+  margin: 70px auto 0;
+  padding: 100px 20%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  grid-column-gap: 30px;
+  margin: 50px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards {
+    justify-content: center;
+    grid-template-columns: 210px;
+    margin: 0;
+    
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .dev-tools {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
 }

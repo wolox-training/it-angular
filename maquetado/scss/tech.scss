@@ -1,0 +1,42 @@
+.tech {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  width: 210px;
+  height: 330px;
+  margin: 25px;
+
+
+  .logo-tech {
+    width: 100px;
+    margin: 5px 0;
+    height: auto;
+  }
+
+  .text {
+    margin: 5px 0;
+  }
+
+  .description{
+    margin: 10px 0;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .tech.primary {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    border-right: none;
+    justify-self: center;
+  }
+
+  .tech {
+    justify-self: center;
+    border-bottom: 2px solid $green;
+  }
+}
