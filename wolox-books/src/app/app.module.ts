@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SignUpComponent } from './screens/unauth/screens/signup/sign-up.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -14,6 +16,8 @@ import { AppComponent } from './app.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
