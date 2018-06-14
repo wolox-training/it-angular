@@ -21,7 +21,7 @@
       grid-template-columns: 210px;
       margin: 0;
 
-      :last-child {
+      &:last-child {
         border: none;
       }
     }
