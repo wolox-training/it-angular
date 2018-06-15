@@ -3,18 +3,17 @@
   <p class="subtitle">BOOKS</p>
 </div>
 <div class="main">
-  <form class="reg-form" [formGroup]="form" (ngSubmit)="register(form.value)">
+  <form class="box reg-form" [formGroup]="form" (ngSubmit)="register(form.value)">
     <label class="bold prefix" for="firstName">First name</label>
-    <input class="data " id="firstName" type="text" formControlName="firstName">
+    <input class="data" id="firstName" type="text" formControlName="firstName">
     <label class="bold prefix" for="lastName">Last name</label>
-    <input class="data " id="lastName" type="text" formControlName="lastName">
+    <input class="data" id="lastName" type="text" formControlName="lastName">
     <label class="bold prefix" for="email">Email</label>
-    <input class="data " id="email" type="text" formControlName="email">
+    <input class="data" id="email" type="text" formControlName="email">
     <label class="bold prefix" for="password">Password</label>
-    <input class="data " id="password" type="password" formControlName="password">
+    <input class="data" id="password" type="password" formControlName="password">
     <input type="submit" class="button register" value="Sign up" [disabled]="!form.valid">
   </form>
-  <div class="separator"></div>
-  <a href="#" class="button login">Login</a>
+  <a href="#" class="box button login">Login</a>
 </div>
 <router-outlet></router-outlet>

@@ -9,7 +9,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export class AppComponent {
   form: FormGroup;
-  post: any[];
   firstName: string = '';
   lastName: string = '';
   email: string = '';
@@ -26,7 +25,6 @@ export class AppComponent {
   }
 
   register(post) {
-    post['locale'] = this.locale;
-    console.log(JSON.stringify({'user':post}));
+    console.log(JSON.stringify({'user': {...post, locale: this.locale }}));
   }
 }
