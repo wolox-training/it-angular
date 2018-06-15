@@ -33,4 +33,9 @@ export class UserService {
     this.ls.clearStorage();
     this.router.navigateByUrl('/login');
   }
+
+  logout(){
+    this.ls.clearStorage();
+    this.router.navigateByUrl('/login');
+  }
 }
