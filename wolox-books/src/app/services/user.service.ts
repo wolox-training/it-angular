@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { Router } from "@angular/router";
+import { LocalStorageService } from './local-storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,8 @@ export class UserService {
 
   constructor(
     private http: HttpClient,
-    private router: Router
+    private router: Router,
+    private ls: LocalStorageService
   ){}
 
   createUser(user) {
@@ -24,6 +26,17 @@ export class UserService {
   }
 
   login(user) {
-    return this.http.post(`${this.ROOT_URL}/users/sessions`, {'session': user});
+    return this.http.post(`${this.ROOT_URL}/users/sessions`, {'session': user}, {observe: 'response'})
+    .subscribe(response => {
+      if(response.status == 200) {
+        this.ls.setValue(this.ls.SESSION_TOKEN, response.body['access_token']);
+        this.router.navigateByUrl('/auth');
+      }
+    });
+  }
+
+  logout(){
+    this.ls.clearStorage();
+    this.router.navigateByUrl('/login');
   }
 }
