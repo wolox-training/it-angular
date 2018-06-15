@@ -9,16 +9,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export class AppComponent {
   form: FormGroup;
-  firstName: string = '';
-  lastName: string = '';
+  first_name: string = '';
+  last_name: string = '';
   email: string = '';
   password: string = '';
   locale: string = 'en';
 
   constructor(private fb: FormBuilder){
     this.form = fb.group({
-      'firstName': [null, Validators.required],
-      'lastName': [null, Validators.required],
+      'first_name': [null, Validators.required],
+      'last_name': [null, Validators.required],
       'email': [null, Validators.required],
       'password': [null, Validators.required]
     })
