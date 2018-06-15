@@ -10,13 +10,12 @@ import { UserService } from '../../../../services/user.service';
 
 export class SignUpComponent {
   form: FormGroup;
-  post: any[];
   first_name: string = '';
   last_name: string = '';
   email: string = '';
   password: string = '';
   locale: string = 'en';
-
+  
   constructor(private fb: FormBuilder, private UserService: UserService){
     this.form = fb.group({
       'first_name': [null, Validators.required],
@@ -28,7 +27,6 @@ export class SignUpComponent {
 
   register(post) {
     post['locale'] = this.locale;
-    post['password_confirmation']=post.password;
-    this.UserService.createUser({'user':post});
+    this.UserService.createUser({'user':{...post, 'password_confirmation': post.password});
   }
 }
