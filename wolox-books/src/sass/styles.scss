@@ -2,13 +2,19 @@
 
 * {
   font-family: 'Roboto', sans-serif;
-  background: $light-gray;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .logo {
-  max-width: 500px;
+  max-width: 460px;
   display: block;
-  margin: 50px auto;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -25,7 +31,6 @@
 .auth-form {
   border-bottom: 1px solid $gray;
   padding: 20px 0;
-  max-width: 500px;
   margin: 0 auto 30px;
 
   .prefix {
@@ -55,7 +60,6 @@
 .sub-button {
   border: 1px solid $green;
   color: $green;
-  max-width: 500px;
   align-self: center;
 
   &:hover {
