@@ -1,0 +1,8 @@
+@import '../sass/colors';
+
+:host {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border-top: 5px solid $blue;
+}
