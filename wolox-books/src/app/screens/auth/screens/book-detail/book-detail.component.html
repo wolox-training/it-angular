@@ -1,0 +1,10 @@
+<auth-nav></auth-nav>
+<div *ngIf="book | async as book;" class="container">
+  <img class="logo" src="{{ book.image_url }}" alt="Book cover">
+  <div class="info">
+    <p class="title">{{ book.title }} <span class="light">({{ book.genre }})</span> </p>
+    <p class="author light"><span class="primary">Autor del libro:</span> {{ book.author }}</p>
+    <p class="editorial light"><span class="primary">Editorial:</span> {{ book.publisher }}</p>
+    <p class="year light"><span class="primary">Año de publicacion:</span> {{ book.year }}</p>
+  </div>
+</div>
