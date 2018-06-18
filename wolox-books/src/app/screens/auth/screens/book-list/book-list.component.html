@@ -1,3 +1,8 @@
 <auth-nav></auth-nav>
-<div class="" *ngFor="let book of books">
+<div class="libros">
+  <div class="libro" *ngFor="let book of books">
+    <img class="logo" src="{{ book.image_url }}" alt="Book Cover">
+    <p class="title">{{ book.title }}</p>
+    <p class="author">{{ book.author }}</p>
+  </div>
 </div>
