@@ -1,9 +1,8 @@
 <div class="navbar">
-  <img class="logo" src="../assets/wolox.svg" alt="WOLOX">
-  <p class="subtitle">BOOKS</p>
+  <img class="logo" src="../assets/wolox_books.png" alt="WOLOX">
 </div>
 <div class="main">
-  <form class="auth-form" [formGroup]="form" (ngSubmit)="register(form.value)">
+  <form class="auth-form" [formGroup]="form" (ngSubmit)="register()">
     <label class="bold prefix" for="first_name">First name</label>
     <input class="data" id="first_name" type="text" formControlName="first_name">
     <label class="bold prefix" for="last_name">Last name</label>
