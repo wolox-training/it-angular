@@ -15,7 +15,7 @@ export class SignUpComponent {
   email: string = '';
   password: string = '';
   locale: string = 'en';
-  
+
   constructor(private fb: FormBuilder, private UserService: UserService){
     this.form = fb.group({
       'first_name': [null, Validators.required],
@@ -27,6 +27,6 @@ export class SignUpComponent {
 
   register(post) {
     post['locale'] = this.locale;
-    this.UserService.createUser({'user':{...post, 'password_confirmation': post.password});
+    this.UserService.createUser({'user':{...post, 'password_confirmation': post.password}});
   }
 }
