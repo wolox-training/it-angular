@@ -9,11 +9,8 @@ import { UserService } from '../../../../services/user.service';
 })
 
 export class SignUpComponent {
+
   form: FormGroup;
-  first_name: string = '';
-  last_name: string = '';
-  email: string = '';
-  password: string = '';
   locale: string = 'en';
 
   constructor(private fb: FormBuilder, private UserService: UserService){
