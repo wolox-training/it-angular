@@ -18,19 +18,19 @@ export class SignUpComponent {
     private UserService: UserService
   ){
     this.form = fb.group({
-      'first_name': [null, Validators.required],
-      'last_name': [null, Validators.required],
-      'email': [null, Validators.required],
-      'password': [null, Validators.required]
+      first_name: [null, Validators.required],
+      last_name: [null, Validators.required],
+      email: [null, Validators.required],
+      password: [null, Validators.required]
     })
   }
 
   register() {
     this.UserService.createUser({
-      'user': {
+      user: {
         ...this.form.value,
-        'password_confirmation': this.form.value.password,
-        'locale': this.locale
+        password_confirmation: this.form.value.password,
+        locale: this.locale
       }
     });
   }
