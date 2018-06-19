@@ -9,8 +9,10 @@ export class UserService {
 
   ROOT_URL: string = 'https://wbooks-api-stage.herokuapp.com/api/v1/users';
 
-  constructor(private http: HttpClient, private router: Router) {
-  }
+  constructor(
+    private http: HttpClient,
+    private router: Router
+  ){}
 
   createUser(user) {
     this.http.post(this.ROOT_URL, user, {observe: 'response'})
