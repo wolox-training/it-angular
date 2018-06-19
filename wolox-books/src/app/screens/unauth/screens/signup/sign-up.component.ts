@@ -26,6 +26,12 @@ export class SignUpComponent {
   }
 
   register() {
-    this.UserService.createUser({'user':{...this.form.value, 'password_confirmation': this.form.value.password, 'locale': this.locale}});
+    this.UserService.createUser({
+      'user': {
+        ...this.form.value,
+        'password_confirmation': this.form.value.password,
+        'locale': this.locale
+      }
+    });
   }
 }

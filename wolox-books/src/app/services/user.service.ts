@@ -5,7 +5,6 @@ import { HttpClient, HttpParams } from "@angular/common/http";
 })
 export class UserService {
 
-  newUser: any;
   ROOT_URL: string;
 
   constructor(private http: HttpClient) {
@@ -14,7 +13,7 @@ export class UserService {
   }
 
   createUser(user) {
-    this.newUser = this.http.post(this.ROOT_URL, user, {observe: 'response'})
+    this.http.post(this.ROOT_URL, user, {observe: 'response'})
     .subscribe(response => {
       if (response.status == 201) {
         console.log('success');
