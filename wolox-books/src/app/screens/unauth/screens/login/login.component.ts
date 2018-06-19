@@ -11,25 +11,26 @@ import { UserService } from '../../../../services/user.service';
 export class LoginComponent implements OnInit {
 
   form: FormGroup;
-  email: string = '';
-  password: string = '';
 
-  constructor(private fb: FormBuilder, private UserService: UserService, private router: Router) {
+  constructor(
+    private fb: FormBuilder,
+    private UserService: UserService,
+    private router: Router
+  ){
     this.form = fb.group({
-      'email': [null, Validators.required],
-      'password': [null, Validators.compose([Validators.required, Validators.minLength(6)])]
+      email: [null, Validators.required],
+      password: [null, Validators.compose([Validators.required, Validators.minLength(6)])]
     })
   }
 
   ngOnInit() {
   }
 
-  login(post) {
-    this.UserService.login(post);
+  login() {
+    this.UserService.login(this.form.value);
   }
 
   goToSignUp() {
     this.router.navigateByUrl('/sign-up');
   }
-
 }
