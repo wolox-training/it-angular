@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
 })
 export class UserService {
 
-  ROOT_URL: string = 'https://wbooks-api-stage.herokuapp.com/api/v1/users';;
+  ROOT_URL: string = 'https://wbooks-api-stage.herokuapp.com/api/v1/users';
 
   constructor(private http: HttpClient, private router: Router) {
   }
@@ -22,7 +22,7 @@ export class UserService {
   }
 
   login(user) {
-    let response = this.http.post(this.ROOT_URL+'/sessions', {'session': user})
+    this.http.post(this.ROOT_URL+'/sessions', {'session': user})
     .subscribe(res => {
       console.log(res['access_token']);
     });
