@@ -27,7 +27,10 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.UserService.login(this.form.value);
+    this.UserService.login(this.form.value)
+    .subscribe(res => {
+      console.log(res['access_token']);
+    });
   }
 
   goToSignUp() {

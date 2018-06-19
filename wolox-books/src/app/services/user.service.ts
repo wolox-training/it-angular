@@ -24,9 +24,6 @@ export class UserService {
   }
 
   login(user) {
-    this.http.post(this.ROOT_URL+'/sessions', {'session': user})
-    .subscribe(res => {
-      console.log(res['access_token']);
-    });
+    return this.http.post(this.ROOT_URL+'/sessions', {'session': user});    
   }
 }

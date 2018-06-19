@@ -1,4 +1,4 @@
-<nav></nav>
+<img class="logo" src="../assets/wolox_books.png" alt="WOLOX">
 <form class="auth-form" [formGroup]="form" (ngSubmit)="login()">
   <label class="bold prefix" for="email">Email</label>
   <input class="data" id="email" type="text" formControlName="email">
@@ -6,4 +6,4 @@
   <input class="data" id="password" type="password" formControlName="password">
   <button type="submit" class="button main-button" [disabled]="!form.valid">Login</button>
 </form>
-<a class="button sub-button" (click)="goToSignUp()">Sign up</a>
+<a class="button sub-button" [routerLink]="['/sign-up']">Sign up</a>
