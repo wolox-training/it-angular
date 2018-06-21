@@ -3,8 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from '../../../../services/user.service';
 import { Router } from '@angular/router';
 
-import { NavbarComponent } from '../../components/navbar/navbar.component';
-
 @Component({
   selector: 'sign-up',
   templateUrl: './sign-up.component.html',
@@ -37,9 +35,5 @@ export class SignUpComponent {
         locale: this.locale
       }
     });
-  }
-
-  goToLogin(){
-    this.router.navigateByUrl('/login');
   }
 }

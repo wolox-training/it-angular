@@ -32,8 +32,4 @@ export class LoginComponent implements OnInit {
       console.log(res['access_token']);
     });
   }
-
-  goToSignUp() {
-    this.router.navigateByUrl('/sign-up');
-  }
 }

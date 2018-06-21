@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
 })
 export class UserService {
 
-  ROOT_URL: string = 'https://wbooks-api-stage.herokuapp.com/api/v1/users';
+  ROOT_URL: string = 'https://wbooks-api-stage.herokuapp.com/api/v1/';
 
   constructor(
     private http: HttpClient,
@@ -15,7 +15,7 @@ export class UserService {
   ){}
 
   createUser(user) {
-    this.http.post(this.ROOT_URL, user, {observe: 'response'})
+    this.http.post(`${this.ROOT_URL}/users`, user, {observe: 'response'})
     .subscribe(response => {
       if (response.status == 201) {
         this.router.navigateByUrl('/login');
@@ -24,6 +24,6 @@ export class UserService {
   }
 
   login(user) {
-    return this.http.post(this.ROOT_URL+'/sessions', {'session': user});    
+    return this.http.post(`${this.ROOT_URL}/users/sessions`, {'session': user});
   }
 }
