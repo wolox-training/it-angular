@@ -15,6 +15,7 @@ import { UserService } from './services/user.service';
     AppComponent,
     SignUpComponent,
     LoginComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

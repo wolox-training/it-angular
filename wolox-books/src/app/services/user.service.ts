@@ -26,13 +26,7 @@ export class UserService {
   }
 
   login(user) {
-    return this.http.post(`${this.ROOT_URL}/users/sessions`, {'session': user}, {observe: 'response'})
-    .subscribe(response => {
-      if(response.status == 200) {
-        this.ls.setValue(this.ls.SESSION_TOKEN, response.body['access_token']);
-        this.router.navigateByUrl('/auth');
-      }
-    });
+    return this.http.post(`${this.ROOT_URL}/users/sessions`, {'session': user}, {observe: 'response'});
   }
 
   logout(){
