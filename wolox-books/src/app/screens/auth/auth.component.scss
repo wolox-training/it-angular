@@ -2,13 +2,14 @@
 @import '../../../sass/fonts';
 
 .navbar {
+  background: $white;
+  box-shadow: 1px 1px 10px $white-50;
+  border-top: 5px solid $blue;
   position: fixed;
   top: 0;
   left: 0;
   height: 70px;
   width: 100%;
-  box-shadow: 1px 1px 10px $white-50;
-  border-top: 5px solid $blue;
 
   .container {
     height: 100%;
