@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     .subscribe(response => {
       if(response.status == 200) {
         this.ls.setValue(this.ls.SESSION_TOKEN, response.body['access_token']);
-        this.router.navigateByUrl('/auth');
+        this.router.navigateByUrl('/books');
       }
     });
   }
