@@ -7,12 +7,12 @@ import { LocalStorageService } from './local-storage.service';
 })
 export class TokenInterceptorService implements HttpInterceptor {
 
-  constructor(private storage: LocalStorageService) { }
+  constructor(private storageService: LocalStorageService) { }
 
   intercept(req, next){
     let tokenizedRequest = req.clone({
       setHeaders: {
-        Authorization: `Bearer ${this.storage.getValue(this.storage.SESSION_TOKEN)}`
+        Authorization: `Bearer ${this.storageService.getValue(this.storageService.SESSION_TOKEN)}`
       }
     });
     return next.handle(tokenizedRequest);
