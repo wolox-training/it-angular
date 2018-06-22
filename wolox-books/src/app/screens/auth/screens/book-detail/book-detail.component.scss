@@ -23,18 +23,23 @@
 
     p {
       margin-bottom: 15px;
-      font-size: 18px;
+      font-size: $text-medium;
     }
 
     .primary {
       font-weight: bold;
-      font-size: 18px;
+      font-size: $text-medium;
     }
 
     .title {
       font-size: $text-huge;
       border-bottom: 3px solid $green;
       padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+
+    .data-container {
+      display: flex;
       margin-bottom: 15px;
     }
   }
