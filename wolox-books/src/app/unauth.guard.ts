@@ -13,7 +13,7 @@ export class UnauthGuard implements CanActivate {
   ) {}
 
   canActivate(): boolean {
-    if (this.UserService.loggedIn() == false ) {
+    if (this.UserService.loggedIn() === false ) {
       return true;
     } else {
       this.router.navigateByUrl('books');
