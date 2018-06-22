@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { UserService } from '../../../../services/user.service';
+import { LocalStorageService } from '../../../../services/local-storage.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private UserService: UserService,
-    private router: Router
+    private router: Router,
+    private ls: LocalStorageService
   ){
     this.form = fb.group({
       email: [null, Validators.required],
@@ -28,8 +30,11 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.UserService.login(this.form.value)
-    .subscribe(res => {
-      console.log(res['access_token']);
+    .subscribe(response => {
+      if(response.status == 200) {
+        this.ls.setValue(this.ls.SESSION_TOKEN, response.body['access_token']);
+        this.router.navigateByUrl('/auth');
+      }
     });
   }
 }
