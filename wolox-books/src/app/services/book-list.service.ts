@@ -7,13 +7,9 @@ import { HttpClient, HttpParams } from "@angular/common/http";
 export class BookListService {
 
   BOOKS_URL: string = 'https://wbooks-api-stage.herokuapp.com/api/v1/books';
-  constructor(private http: HttpClient) {
-
-  }
+  constructor(private http: HttpClient) {}
 
   getBooks() {
     return this.http.get(this.BOOKS_URL);
   }
-
-
 }
