@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './screens/unauth/screens/signup/sign-up.component';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { LoginComponent } from './screens/unauth/screens/login/login.component';
 import { AuthComponent } from './screens/auth/auth.component';
 import { LocalStorageService } from './services/local-storage.service';
@@ -13,6 +13,7 @@ import { AuthGuard } from './auth.guard';
 import { UnauthGuard } from './unauth.guard';
 import { UnauthComponent } from './screens/unauth/unauth.component';
 import { BookListComponent } from './screens/auth/screens/book-list/book-list.component';
+import { TokenInterceptorService } from './services/token-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,12 @@ import { BookListComponent } from './screens/auth/screens/book-list/book-list.co
     LocalStorageService,
     UserService,
     AuthGuard,
-    UnauthGuard
+    UnauthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    }
   ],
   bootstrap: [
     AppComponent

@@ -1,0 +1,44 @@
+@import '../../../../../sass/colors';
+@import '../../../../../sass/fonts';
+
+.books {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 100px auto 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  background: $white;
+  padding: 20px;
+  max-width: 240px;
+  width: 100%;
+  box-shadow: 2px 2px 5px $white-25;
+
+  .logo {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    text-align: center;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    background: $white;
+    font-size: $text-medium;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .author {
+    background: $white;
+    font-size: $text-small;
+    color: $gray;
+  }
+}
