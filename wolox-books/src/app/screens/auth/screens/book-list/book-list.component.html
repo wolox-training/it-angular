@@ -1,5 +1,5 @@
 <div class="books">
-  <div class="book" *ngFor="let book of books">
+  <div class="book" *ngFor="let book of books" (click)="bookGo(book.id)">
     <img class="logo" src="{{ book.image_url }}" alt="Book Cover">
     <h3 class="title">{{ book.title }}</h3>
     <span class="author">{{ book.author }}</span>
