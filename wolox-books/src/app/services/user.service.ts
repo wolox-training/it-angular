@@ -33,4 +33,8 @@ export class UserService {
     this.ls.clearStorage();
     this.router.navigateByUrl('/login');
   }
+
+  loggedIn() {
+    return !!this.ls.getValue(this.ls.SESSION_TOKEN);
+  }
 }
