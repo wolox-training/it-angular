@@ -10,7 +10,8 @@
 
   .logo {
     padding-right: 20px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 400px;
     object-fit: contain;
   }
@@ -20,11 +21,6 @@
     flex-direction: column;
     width: 100%;
     letter-spacing: 1px;
-
-    p {
-      margin-bottom: 15px;
-      font-size: $text-medium;
-    }
 
     .primary {
       font-weight: bold;
