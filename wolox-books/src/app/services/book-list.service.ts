@@ -12,4 +12,8 @@ export class BookListService {
   getBooks() {
     return this.http.get(`${this.BOOKS_URL}/books`);
   }
+
+  getBook(id: number) {
+    return this.http.get(`${this.BOOKS_URL}/books/${id}`);
+  }
 }

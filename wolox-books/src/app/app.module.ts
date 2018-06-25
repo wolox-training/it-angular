@@ -14,6 +14,7 @@ import { UnauthGuard } from './unauth.guard';
 import { UnauthComponent } from './screens/unauth/unauth.component';
 import { BookListComponent } from './screens/auth/screens/book-list/book-list.component';
 import { TokenInterceptorService } from './services/token-interceptor.service';
+import { BookDetailComponent } from './screens/auth/screens/book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     LoginComponent,
     AuthComponent,
     UnauthComponent,
-    BookListComponent
+    BookListComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
